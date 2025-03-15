@@ -6,7 +6,7 @@ Aplicación en **React Native** con **Expo** que consume la API de [Rick and Mor
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/5aec8b90-2b8d-41bb-8a7d-dc318460a455" alt="rick-and-morty" width="300"/>
-  <img src="https://github.com/user-attachments/assets/3b9475a7-3e9d-49fa-bca5-c393eb882341" alt="rick-and-morty2" width="300"/>
+  <img src="https://github.com/user-attachments/assets/045bde2c-0876-4ab3-95fd-899543667f75" alt="rick-and-morty3" width="300"/>
 </p>
 
 
