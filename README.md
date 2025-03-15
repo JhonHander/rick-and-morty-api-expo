@@ -3,7 +3,9 @@
 Aplicación en **React Native** con **Expo** que consume la API de [Rick and Morty](https://rickandmortyapi.com/) para mostrar una lista de personajes con su nombre, estado, especie, tipo y género.  
 
 ## 📸 Capturas de Pantalla  
-*(Aquí puedes agregar imágenes de la app en funcionamiento)*  
+![rick-and-morty](https://github.com/user-attachments/assets/5aec8b90-2b8d-41bb-8a7d-dc318460a455)
+![rick-and-morty2](https://github.com/user-attachments/assets/3b9475a7-3e9d-49fa-bca5-c393eb882341)
+
 
 ## 🛠 Tecnologías Utilizadas  
 - ⚛️ **React Native**  
