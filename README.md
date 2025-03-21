@@ -9,8 +9,6 @@ Aplicación en **React Native** con **Expo** que consume la API de [Rick and Mor
   <img src="https://github.com/user-attachments/assets/045bde2c-0876-4ab3-95fd-899543667f75" alt="rick-and-morty3" width="300"/>
 </p>
 
-
-
 ## 🛠 Tecnologías Utilizadas  
 - ⚛️ **React Native**  
 - 🚀 **Expo**  
@@ -24,15 +22,20 @@ Aplicación en **React Native** con **Expo** que consume la API de [Rick and Mor
    ```bash
    git clone https://github.com/tu-usuario/tu-repo.git
    cd tu-repo
+   ```
 2. Instala las dependencias:  
    ```bash
    npm install
-2. Inicia el proyecto en Expo:  
+   ```
+3. Inicia el proyecto en Expo:  
    ```bash
    npx expo start
-Luego, escanea el código QR con la app de Expo Go o ejecuta en un emulador
+   ```
+   Luego, escanea el código QR con la app de Expo Go o ejecuta en un emulador.
 
 ## 🚀 Funcionalidades
 - ✅ Lista de personajes con su información básica
 - ✅ Consumo de API con fetch
 - ✅ Renderizado eficiente con FlatList
+- ✅ Modal con información adicional del personaje (origen, ubicación y cantidad de episodios)
+- ✅ Cierre del modal al hacer tap fuera del contenido
