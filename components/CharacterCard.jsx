@@ -1,27 +1,28 @@
 import React from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 
-const CharacterCard = ({ character }) => {
+const CharacterCard = ({ character, onPress }) => {
   return (
-    <View style={styles.card}>
-      <Image source={{ uri: character.image }} style={styles.image} />
-      <View style={styles.info}>
-        <Text style={styles.name}>{character.name}</Text>
-        <Text style={styles.status}>  
-          {character.status} - {character.species}
-        </Text>
-        <Text style={styles.type}>{character.type || "No type"}</Text>
-        <Text style={styles.gender}>{character.gender}</Text>
+    <TouchableOpacity onPress={() => onPress(character)}>
+      <View style={styles.card}>
+        <Image source={{ uri: character.image }} style={styles.image} />
+        <View style={styles.info}>
+          <Text style={styles.name}>{character.name}</Text>
+          <Text style={styles.status}>
+            {character.status} - {character.species}
+          </Text>
+          <Text style={styles.type}>{character.type || "No type"}</Text>
+          <Text style={styles.gender}>{character.gender}</Text>
+        </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
   card: {
     flexDirection: "row",
-    // backgroundColor: "#fff",
-    backgroundColor: "#3c3e44", // Color de las tarjetas
+    backgroundColor: "#3c3e44",
     borderRadius: 20,
     padding: 10,
     marginVertical: 5,
@@ -35,7 +36,7 @@ const styles = StyleSheet.create({
   image: {
     width: 80,
     height: 80,
-    borderRadius: 10,
+    borderRadius: 20,
     marginRight: 15,
   },
   info: {
@@ -44,16 +45,16 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 18,
     fontWeight: "bold",
-    color: "#97ce4c", 
+    color: "#97ce4c",
   },
   status: {
-    color: "#42b4ca", 
+    color: "#42b4ca",
   },
   type: {
-    color: "#b5e00d", 
+    color: "#b5e00d",
   },
   gender: {
-    color: "white", // Blanco para género
+    color: "white",
   },
 });
 
