@@ -37,15 +37,15 @@ const Main = () => {
           animationType="fade"
           onRequestClose={closeModal}
         >
-          <View style={styles.modalContainer}>
-            <View style={styles.modalContent}>
+          <TouchableOpacity style={styles.modalContainer} activeOpacity={1} onPress={closeModal}>
+            <TouchableOpacity style={styles.modalContent} activeOpacity={1} onPress={() => {}}>
               <Text style={styles.modalTitle}>{selectedCharacter.name}</Text>
               <Text>Origin: {selectedCharacter.origin.name}</Text>
               <Text>Location: {selectedCharacter.location.name}</Text>
               <Text>Episodes: {selectedCharacter.episode.length}</Text>
               <Button title="Close" onPress={closeModal} />
-            </View>
-          </View>
+            </TouchableOpacity>
+          </TouchableOpacity>
         </Modal>
       )}
     </SafeAreaView>
