@@ -5,9 +5,9 @@ Aplicación en **React Native** con **Expo** que consume la API de [Rick and Mor
 ## 📸 Capturas de Pantalla  
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/3f4177cb-4273-4f02-91d7-fe11243a59ed" alt="rick-and-morty1" width="300"/>
-  <img src="https://github.com/user-attachments/assets/e376c5f0-36e3-4f5e-bfe8-80280ef66a66" alt="rick-and-morty2" width="300"/>
-  <img src="https://github.com/user-attachments/assets/fd51c5e8-2f10-4015-b44e-789efd01a98a" alt="rick-and-morty3" width="300"/>
+  <img src="https://github.com/user-attachments/assets/3f4177cb-4273-4f02-91d7-fe11243a59ed" alt="rick-and-morty1" width="200" style="margin-right: 10px;"/>
+  <img src="https://github.com/user-attachments/assets/e376c5f0-36e3-4f5e-bfe8-80280ef66a66" alt="rick-and-morty2" width="200" style="margin-right: 10px;"/>
+  <img src="https://github.com/user-attachments/assets/fd51c5e8-2f10-4015-b44e-789efd01a98a" alt="rick-and-morty3" width="200" style="margin-right: 10px;"/>
 </p>
 
 ## 🛠 Tecnologías Utilizadas  
