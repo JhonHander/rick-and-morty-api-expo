@@ -38,8 +38,8 @@ const Main = () => {
           <RefreshControl
             refreshing={refreshing}
             onRefresh={onRefresh}
-            colors={["#b5e00d"]}
-            progressBackgroundColor="#202329"
+            colors={["#b5e00d"]} // Para Android - color 
+            tintColor="#b5e00d"  // Para iOS - color del spinner
           />
         }
       />
