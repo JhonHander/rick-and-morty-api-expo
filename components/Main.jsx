@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { FlatList, ActivityIndicator, StyleSheet, SafeAreaView, Modal, TouchableOpacity, View, Button, Text} from "react-native";
+import { FlatList, ActivityIndicator, StyleSheet, SafeAreaView, Modal, TouchableOpacity, View, Button, Text, RefreshControl} from "react-native";
 import { useFetchCharacters } from  '../lib/getCharacters'
 import CharacterCard from "./CharacterCard";
 import { StatusBar } from "expo-status-bar";
 
 const Main = () => {
 
-  const { characters, loading, setPage } = useFetchCharacters();
+  const { characters, loading, setPage, refreshCharacters } = useFetchCharacters();
   const [selectedCharacter, setSelectedCharacter] = useState(null);
+  const [refreshing, setRefreshing] = useState(false);
 
   const handlePress = (character) => {
     setSelectedCharacter(character);
@@ -16,6 +17,12 @@ const Main = () => {
   const closeModal = () => {
     setSelectedCharacter(null);
   };
+
+  const onRefresh = async () => {
+    setRefreshing(true);
+    refreshCharacters();
+    setRefreshing(false);
+  }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -27,6 +34,14 @@ const Main = () => {
         onEndReached={() => setPage((prevPage) => prevPage + 1)} 
         onEndReachedThreshold={0.5} 
         ListFooterComponent={loading && <ActivityIndicator size="large" color="#b5e00d" style={styles.loader} />}
+        refreshControl={
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={onRefresh}
+            colors={["#b5e00d"]}
+            progressBackgroundColor="#202329"
+          />
+        }
       />
       <StatusBar style="light" />
 

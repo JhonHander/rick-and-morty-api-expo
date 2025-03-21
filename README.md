@@ -16,7 +16,9 @@ Aplicación en **React Native** con **Expo** que consume la API de [Rick and Mor
 - 🔗 **API de Rick and Morty**  
 - 📜 **FlatList** para renderizado eficiente  
 - 🛑 **SafeAreaContext** (`SafeAreaProvider` y `SafeAreaView`) para manejar áreas seguras en dispositivos móviles  
-
+- 🪝 **Custom Hooks** para manejo eficiente del estado y lógica de negocio
+- 🔄 **useCallback** para optimización de rendimiento
+ 
 ## 📦 Instalación y Ejecución  
 
 1. Clona este repositorio:  
@@ -40,4 +42,24 @@ Aplicación en **React Native** con **Expo** que consume la API de [Rick and Mor
 - ✅ Renderizado eficiente con FlatList
 - ✅ Modal con información adicional del personaje (origen, ubicación y cantidad de episodios)
 - ✅ Cierre del modal al hacer tap fuera del contenido
-- ✅ Carga de personajes por página, agregando nuevos personajes a la lista existente con el operador spread
+- ✅ Paginación infinita con carga automática al llegar al final de la lista
+- ✅ Indicador de carga mientras se obtienen más datos
+- ✅ Pull-to-refresh para actualizar la lista de personajes
+- ✅ Gestión optimizada de estados con custom hooks
+- ✅ Manejo de errores en peticiones a la API
+
+## 🧩 Estructura del Proyecto
+
+- **/components**: Componentes reutilizables de la UI
+  - **CharacterCard.jsx**: Tarjeta para mostrar la información de cada personaje
+  - **Main.jsx**: Componente principal que organiza la estructura de la aplicación
+- **/lib**: Lógica de negocio y manejo de datos
+  - **getCharacters.js**: Custom hook para obtener y gestionar los datos de los personajes
+
+## 📝 Notas de Desarrollo
+
+Este proyecto implementa patrones modernos de React como:
+- Separación de responsabilidades con custom hooks
+- Optimizaciones de rendimiento usando `useCallback`
+- Gestión eficiente de estado con `useState` y funciones actualizadoras
+- Carga de datos por paginación para mejorar el rendimiento y experiencia de usuario
